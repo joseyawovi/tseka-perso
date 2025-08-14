@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Italianno&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 30% 97%;
+    --foreground: 222 47% 11%;
+
+    --card: 48 30% 97%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 48 30% 97%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 222 47% 11%;
+    --primary-foreground: 48 30% 97%;
+
+    --secondary: 39 58% 54%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 222 5% 40%;
+    --muted-foreground: 222 5% 40%;
+
+    --accent: 11 67% 63%;
+    --accent-foreground: 48 30% 97%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 48 30% 97%;
+
+    --border: 222 5% 90%;
+    --input: 222 5% 80%;
+    --ring: 222 47% 11%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 48 30% 97%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 48 30% 97%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 48 30% 97%;
+
+    --primary: 48 30% 97%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 39 58% 54%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 222 5% 70%;
+    --muted-foreground: 222 5% 70%;
+
+    --accent: 11 67% 63%;
+    --accent-foreground: 48 30% 97%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 48 30% 97%;
+
+    --border: 222 5% 20%;
+    --input: 222 5% 30%;
+    --ring: 39 58% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-lato {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .font-opensans {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .font-dancing {
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .font-italianno {
+    font-family: 'Italianno', cursive;
+  }
+}

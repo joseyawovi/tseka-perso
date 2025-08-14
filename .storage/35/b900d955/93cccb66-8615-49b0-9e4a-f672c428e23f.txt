@@ -1,0 +1,19 @@
+$ cd /workspace/shadcn-ui
+$ cd /workspace/shadcn-ui && pnpm add @tailwindcss/typography react-router-dom @tanstack/react-query
+
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Progress: resolved 67, reused 67, downloaded 0, added 0
+Progress: resolved 390, reused 390, downloaded 0, added 0
+ WARN  1 deprecated subdependencies found: rollup-plugin-terser@7.0.2
+Already up to date
+Progress: resolved 489, reused 415, downloaded 0, added 0, done
+
+Done in 6s
+$ cd /workspace/shadcn-ui && mkdir -p public/assets/books public/assets/formations public/assets/gallery public/assets/home public/assets/projects public/assets/blog public/assets/about public/assets/testimonials
+
+$ cd /workspace/shadcn-ui && pnpm run lint
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+

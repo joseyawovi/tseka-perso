@@ -1,0 +1,51 @@
+$ cd /workspace/shadcn-ui
+$ cd /workspace/shadcn-ui && pnpm add @tailwindcss/typography react-router-dom @tanstack/react-query
+
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Progress: resolved 67, reused 67, downloaded 0, added 0
+Progress: resolved 390, reused 390, downloaded 0, added 0
+ WARN  1 deprecated subdependencies found: rollup-plugin-terser@7.0.2
+Already up to date
+Progress: resolved 489, reused 415, downloaded 0, added 0, done
+
+Done in 6s
+$ cd /workspace/shadcn-ui && mkdir -p public/assets/books public/assets/formations public/assets/gallery public/assets/home public/assets/projects public/assets/blog public/assets/about public/assets/testimonials
+
+$ cd /workspace/shadcn-ui && pnpm run lint
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+$ cd /workspace/shadcn-ui && pnpm run build
+
+
+> shadcnui@ build /workspace/shadcn-ui
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+✓ 1739 modules transformed.
+x Build failed in 4.32s
+error during build:
+src/components/layout/header.tsx (6:9): "useMobile" is not exported by "src/hooks/use-mobile.tsx", imported by "src/components/layout/header.tsx".
+file: /workspace/shadcn-ui/src/components/layout/header.tsx:6:9
+
+4: import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+5: import { Menu } from 'lucide-react';
+6: import { useMobile } from "@/hooks/use-mobile";
+            ^
+7: 
+8: export function Header() {
+
+    at getRollupError (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at Module.error (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/node-entry.js:16830:16)
+    at Module.traceVariable (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/node-entry.js:17279:29)
+    at ModuleScope.findVariable (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/node-entry.js:14925:39)
+    at FunctionScope.findVariable (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/node-entry.js:5620:38)
+    at FunctionBodyScope.findVariable (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/node-entry.js:5620:38)
+    at Identifier.bind (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/node-entry.js:5394:40)
+    at CallExpression.bind (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/node-entry.js:2785:23)
+    at CallExpression.bind (file:///workspace/shadcn-ui/node_modules/.pnpm/rollup@4.45.1/node_modules/rollup/dist/es/shared/node-entry.js:11986:15)
+ ELIFECYCLE  Command failed with exit code 1.
