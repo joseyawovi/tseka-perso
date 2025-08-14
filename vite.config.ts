@@ -16,4 +16,9 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server:{
+    allowedHosts:[
+      "5173-joseyawovi-tsekaperso-og4r26mwyhz.ws-eu121.gitpod.io",
+    ]
+  }
 }));

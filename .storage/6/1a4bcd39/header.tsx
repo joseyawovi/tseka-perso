@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from 'lucide-react';
+import { Menu } from "lucide-react";
 import { useMobile } from "@/hooks/use-mobile";
 
 export function Header() {
@@ -10,24 +10,26 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: '/', label: 'Accueil' },
-    { href: '/livres', label: 'Livres' },
-    { href: '/formations', label: 'Formations' },
-    { href: '/consulting', label: 'Consulting' },
-    { href: '/projets', label: 'Projets & Engagements' },
-    { href: '/galerie', label: 'Galerie' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/a-propos', label: 'À Propos' },
-    { href: '/contact', label: 'Contact' },
+    { href: "/", label: "Accueil" },
+    { href: "/livres", label: "Livres" },
+    { href: "/formations", label: "Formations" },
+    { href: "/consulting", label: "Consulting" },
+    { href: "/projets", label: "Projets & Engagements" },
+    { href: "/galerie", label: "Galerie" },
+    { href: "/blog", label: "Blog" },
+    { href: "/a-propos", label: "À Propos" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <span className="font-playfair text-2xl font-bold text-primary">Jean Dupont</span>
+          <span className="font-playfair text-2xl font-bold text-primary">
+            Tcheka Malou
+          </span>
         </Link>
-        
+
         {isMobile ? (
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
