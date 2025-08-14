@@ -163,7 +163,7 @@ export const galleryItems: GalleryItem[] = [
     title: 'En coulisses avant une conférence',
     category: 'Backstage',
     type: 'image',
-    src: '/assets/gallery/conference.jpg',
+    src: '/assets/gallery/conference.png',
   },
   {
     id: '4',

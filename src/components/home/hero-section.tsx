@@ -35,7 +35,7 @@ export function HeroSection() {
 
           <div className="relative h-[300px] md:h-[450px] rounded-lg overflow-hidden shadow-xl">
             <img
-              src="/images/Conference.jpg"
+              src="/images/conference.png"
               alt="Tcheka Malou en conférence"
               className="h-full w-full object-cover"
             />
