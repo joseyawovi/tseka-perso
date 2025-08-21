@@ -12,9 +12,9 @@ export function HeroSection() {
               <span className="text-secondary">inspirer</span>
             </h1>
             <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl">
-              Auteur, formateur et consultant en communication, j'accompagne les
-              individus et les organisations dans leur développement et leur
-              expression authentique.
+              Écrivain, consultant en stratégie et communication avec 8 ans d’années d’expériences, 
+              j’accompagne les individus et les organisations dans leur développement et l’expression 
+              de leur singularité
             </p>
             <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
               <Button
