@@ -12,7 +12,7 @@ export function ServicesSection() {
             Services de Consulting
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-lg">
-            Expertise et accompagnement personnalisé pour répondre à vos besoins en communication et développement personnel.
+            Expertise et accompagnement personnalisé pour répondre à vos besoins en communication et développement.
           </p>
         </div>
         

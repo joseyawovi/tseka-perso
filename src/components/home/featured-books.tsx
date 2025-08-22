@@ -15,7 +15,7 @@ export function FeaturedBooks() {
             Livres Récents
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-lg">
-            Découvrez mes ouvrages explorant la communication, le leadership et le développement personnel.
+           Découvrez mes derniers ouvrages
           </p>
         </div>
         

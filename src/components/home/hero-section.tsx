@@ -8,8 +8,8 @@ export function HeroSection() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center">
           <div className="flex flex-col space-y-6">
             <h1 className="font-playfair text-4xl font-bold leading-tight tracking-tighter md:text-6xl">
-              Histoires, savoirs et images pour{" "}
-              <span className="text-secondary">inspirer</span>
+              Multipotentiel {" "}
+              <span className="text-secondary">en action</span>
             </h1>
             <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl">
               Écrivain, consultant en stratégie et communication avec 8 ans d’années d’expériences, 

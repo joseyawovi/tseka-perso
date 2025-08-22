@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
   },
   server:{
     allowedHosts:[
-      "5174-joseyawovi-tsekaperso-kg5qqkpsqy1.ws-us121.gitpod.io",
+      "5173-joseyawovi-tsekaperso-mbdl7r2v9dy.ws-us121.gitpod.io",
     ]
   }
 }));
